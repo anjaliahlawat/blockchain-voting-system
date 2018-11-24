@@ -1,0 +1,101 @@
+@charset "UTF-8";
+body {
+	margin:0px;
+	padding: 0px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height:500px;
+    background: #424344;
+}
+.row-header
+{
+    margin:0px;
+    padding:0px;
+}
+.jumbotron.jumbotron-fluid
+{
+	background: #424344;
+    color:floralwhite;
+    padding-top:90px;
+    padding-bottom:25px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.navbar-dark
+{
+    background-color: #393939;
+}
+
+.login, .reg, .readmore, .list-unstyled a
+{
+	color:floralwhite;
+	cursor:pointer !important;
+    
+}
+#contact_details ,#contact_details a, h5, .col-auto p
+{
+	color:floralwhite;
+}
+.reg, .readmore, .list-unstyled a
+{
+   text-decoration:none !important;	
+}
+
+.login:hover, .reg:hover, .readmore:hover, .list-unstyled a:hover
+{
+	opacity:0.7 !important;
+	color:floralwhite !important;
+}
+.carousel
+{
+    background: #393939;
+}
+.carousel-item
+{
+    height:300px;
+}
+
+.carousel-item img
+{
+    position: absolute;
+    top:0;
+    left:0;
+    min-height: 300px;
+    width:350px !important;
+}
+#carouselButton{
+    right: 0px;
+    position: absolute;
+    bottom:0px;
+}
+.footer
+{
+    background-color: #393939;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
+#news1 , #news2, #news3, #news4 
+{
+	height: 60px;
+	background : #393939;
+	padding-top: 12px;
+	padding-left: 30px;
+}
+#heading
+{
+	color: floralwhite;
+	height: 60px;
+	padding-top: 12px;
+	padding-left: 50px;
+	
+}
+#news1 a, #news2 a, #news3 a, #news4 a
+{
+	text-decoration: none;
+	color: floralwhite;
+}
+#news1:hover , #news2:hover, #news3:hover, #news4:hover
+{
+	background : #7a88c9;
+	color: #393939;
+} 
