@@ -80,6 +80,7 @@
           </div>
           <div class="col-12 col-sm-8">
                     <h1>Election Commission of India</h1>
+                    <h6><i>Every vote counts...</i></h6>
           </div>
     </div>
     

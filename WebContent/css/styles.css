@@ -89,6 +89,10 @@ body {
 	padding-left: 50px;
 	
 }
+h6
+{
+	padding-left:23em;
+}
 #news1 a, #news2 a, #news3 a, #news4 a
 {
 	text-decoration: none;

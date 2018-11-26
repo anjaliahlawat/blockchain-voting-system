@@ -46,6 +46,12 @@
              </div>
         </div>
         <div class="form-group">
+             <label class="control-label col-sm-2" for="dob">Date of Birth:</label>
+             <div class="col-sm-10">
+                  <input type="text" class="form-control" name="dob" id="dob">
+             </div>
+        </div>
+        <div class="form-group">
              <label class="control-label col-sm-2" for="adline1">Address Line1:</label>
              <div class="col-sm-10">
                   <input type="text" class="form-control" name="adline1" id="adline1">
@@ -78,7 +84,7 @@
         <div class="form-group">
              <label class="control-label col-sm-2" for="pincode">Pincode:</label>
              <div class="col-sm-10">
-                  <input type="text" class="form-control" id="pincode" name="pincode" placeholder="Enter pincode">
+                  <input type="number" class="form-control" id="pincode" name="pincode" placeholder="Enter pincode">
              </div>
         </div>
         <div class="form-group">
@@ -90,13 +96,19 @@
         <div class="form-group">
              <label class="control-label col-sm-2" for="email_id">Email Id:</label>
              <div class="col-sm-10">
-                  <input type="email" class="form-control" id="email_id" name="email_id" placeholder="Enter email id">
+                  <input type="text" class="form-control" id="email_id" name="email_id" placeholder="Enter email id">
              </div>
         </div>
         <div class="form-group">
              <label class="control-label col-sm-2" for="phone_no">Phone no.:</label>
              <div class="col-sm-10">
                   <input type="text" class="form-control" id="phone_no" name="phone_no" placeholder="Enter phone no.">
+             </div>
+        </div>
+        <div class="form-group">
+             <label class="control-label col-sm-2" for="phone_no">Create a username:</label>
+             <div class="col-sm-10">
+                  <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Enter user name">
              </div>
         </div>
         <div class="form-group">

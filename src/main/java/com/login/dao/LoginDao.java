@@ -22,9 +22,7 @@ public class LoginDao {
 			} catch (Exception e) {
 				
 				e.printStackTrace();
-			}
-	        
-		
+			}		
 		return false;
    }
 }
