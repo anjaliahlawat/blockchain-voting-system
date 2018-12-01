@@ -34,13 +34,22 @@ public class register extends HttpServlet {
 		String voter_id = request.getParameter("voter_id");
 		String email_id = request.getParameter("email_id");
 		String phone_no = request.getParameter("phone_no");
+		String user_name = request.getParameter("user_name");
 		String password = request.getParameter("password");
-		
-		RegisterDao dao = new RegisterDao(f_name, m_name, l_name, gender, dob,
-				adline1, adline2, city, state, nationality, pincode, voter_id, email_id, phone_no, password);
-		
-		response.sendRedirect("thankyou.jsp");
-		
+		String cpassword = request.getParameter("cpassword");
+		if(cpassword == password)
+		{
+			RegisterDao dao = new RegisterDao(f_name, m_name, l_name, gender, dob,
+					adline1, adline2, city, state, nationality, pincode, voter_id, email_id, phone_no, password);
+			if(dao.insert())
+			{
+				response.sendRedirect("thankyou.jsp");
+			}
+			else
+			{
+				response.sendRedirect("main.jsp");
+			}
+		}		
 	}
 
 

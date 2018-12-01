@@ -1,5 +1,10 @@
 package com.login.dao;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.time.LocalDate;
 
 public class RegisterDao {
@@ -43,5 +48,19 @@ public class RegisterDao {
 		this.password = password;
 	}
 	String query="insert into registration values(f_name, m_name, l_name, gender, dob, adline1,"
-			+ " adline1, adline2, city, state, nationality, pincode, voter_id, email_id, phone_no, password)";
+			+ " adline1, adline2, city, state, nationality, pincode, voter_id, email_id, phone_no)";
+	public boolean insert() 
+	{
+		    try {
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con =DriverManager.getConnection(url, name, pwd);
+		        Statement st= con.createStatement();
+		        int count= st.executeUpdate(query);
+		        
+			} catch (Exception e) {
+				
+				e.printStackTrace();
+			}		
+		return false;
+   }
 }

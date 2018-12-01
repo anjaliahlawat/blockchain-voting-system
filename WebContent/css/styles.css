@@ -91,7 +91,7 @@ body {
 }
 h6
 {
-	padding-left:23em;
+	padding-left:15em;
 }
 #news1 a, #news2 a, #news3 a, #news4 a
 {
@@ -102,4 +102,10 @@ h6
 {
 	background : #7a88c9;
 	color: #393939;
-} 
+}
+#header_signup
+{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+ 

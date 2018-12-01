@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/bootstrap-social.css">
-<title>Insert title here</title>
+<title>Online Voting</title>
 </head>
 <body>
 <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
@@ -29,7 +29,7 @@
                     <strong> Login</strong>                     
                 </a>
                 <strong>|</strong>
-                <a class="reg" href="register.jsp"><strong>Register</strong></a> 
+                <a class="reg" href="register.jsp"><strong>Sign Up</strong></a> 
            </span>           
        </div>
      </div>
@@ -79,7 +79,7 @@
              <img alt="EC" src="static/ec_logo.png" class="img-fluid mr-auto" height="50" width="61">
           </div>
           <div class="col-12 col-sm-8">
-                    <h1>Election Commission of India</h1>
+                    <h1>Online Voting Portal</h1>
                     <h6><i>Every vote counts...</i></h6>
           </div>
     </div>
