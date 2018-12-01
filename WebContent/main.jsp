@@ -44,7 +44,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                        <form action="Login">
+                        <form action="loginprocess.jsp" method="post">
                                 <div class="form-row">
                                     <div class="form-group col-sm-4">
                                             <label class="sr-only" for="uname">UserName</label>
@@ -52,7 +52,7 @@
                                     </div>
                                     <div class="form-group col-sm-4">
                                         <label class="sr-only" for="password">Password</label>
-                                        <input type="password" class="form-control form-control-sm mr-1" id="password" placeholder="Password">
+                                        <input type="password" class="form-control form-control-sm mr-1" id="password" name="pass" placeholder="Password">
                                     </div>
                                     <div class="col-sm-auto">
                                         <div class="form-check">
