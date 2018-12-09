@@ -11,7 +11,8 @@
 <title>Online Voting</title>
 </head>
 <body>
-<% 
+<%
+   
        response.setHeader("Cache-control","no-cache, no-store, must-revalidate");
      
        if(session.getAttribute("username")==null)
@@ -20,11 +21,11 @@
        }
        else
        {
-    	  String uname= (String)session.getAttribute("username");
-    	  session.setAttribute("username", uname);
-       }      
- %>
-   <div class="container bg-light mt-2">
+    	   String uname= (String)session.getAttribute("username");
+     	   session.setAttribute("username", uname);
+       }
+%>
+<div class="container bg-light mt-2">
        <div class="row">
           <div class="col-12 col-sm-1 mt-4 mb-2">
                <img alt="EC" src="static/ec_logo.png" class="img-fluid mr-auto" height="50" width="61">
@@ -43,23 +44,24 @@
           
        </div>
    </div>
-   <div class="container bg-light mt-2">
-       <div class="row">
-           <ol class="col-12 breadcrumb">
-                <li class="breadcrumb-item active">Home</li>
-           </ol>
-       </div>
-       <div class="row">
+<div class="container bg-light mt-2">
+   <div class="row">
+        <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="home.jsp">Home</a></li>
+                <li class="breadcrumb-item active" href="#">Upload Documents</li>
+        </ol>
+   </div>
+   <div class="row">
           <div class="col-12 col-sm-2">
-             <a role="button" class="btn btn-block nav-link bg-primary" href="registervoter.jsp" data-toggle="tooltip" data-html="true"
-                     data-placement="bottom" style="color:floralwhite;">Register</a>
+             <a role="button" class="btn btn-block nav-link active bg-primary" href="registervoter.jsp" data-toggle="tooltip" data-html="true"
+                     data-placement="bottom" style="color:floralwhite;" >Register</a>
           </div>
           <div class="col-12 col-sm-2">
              <a role="button" class="btn btn-block nav-link bg-primary" href="#reserveform" data-toggle="tooltip" data-html="true"
                      data-placement="bottom" style="color:floralwhite;">Check Status</a>
           </div>
           <div class="col-12 col-sm-2">
-             <a role="button" class="btn btn-block nav-link bg-primary" href="uploadDoc.jsp" data-toggle="tooltip" data-html="true"
+             <a role="button" class="btn btn-block nav-link bg-primary" href="" data-toggle="tooltip" data-html="true"
                      data-placement="bottom" style="color:floralwhite;">Upload Documents</a>
           </div>
           <div class="col-12 col-sm-2">
@@ -75,41 +77,46 @@
                      data-placement="bottom" style="color:floralwhite;">Settings</a>
           </div>
 	   </div>
-	   <div class="row mt-5">
-	       <div class="col-12 col-sm-2 mt-3" id="personal_div">
-	          <div class="sqr">
-	              
-	          </div>
-	          <br/>
-	           <h5 style="color:black;"> ${username} </h5>
-	           
-	           <a href="#" >Edit Profile Photo</a>
+	   <div class="row mt-3">
+	       <div class="col-12 col-sm-9 offset-sm-1" id="register_div">
+	           <form class="form-horizontal mt-3" action="uploadprocess.jsp">
+	                <div class="form-group">
+			             <label class="control-label col-sm-3" for="votercard">Upload Voter Card:</label>
+			             <div class="col-sm-10">
+			                   <input type="file" name="pic" accept="image/*">                               
+			             </div>
+	                </div>
+	                <br/>
+	                <div class="form-group">
+			             <label class="control-label col-sm-3" for="votercard">Upload Address Proof:</label>
+			             <div class="col-sm-10">
+			                   <input type="file" name="pic" accept="image/*">                               
+			             </div>
+	                </div>
+	                <br/>
+	                <div class="form-group">
+			             <label class="control-label col-sm-3" for="votercard">Upload Birth Proof:</label>
+			             <div class="col-sm-10">
+			                   <input type="file" name="pic" accept="image/*">                               
+			             </div>
+	                </div>
+	                <br/>
+                    <div class="form-group">
+			           <div class="col-sm-offset-2 col-sm-10">
+			             <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+			             <button type="submit" class="btn btn-primary btn-sm ml-1">Save</button>
+			           </div>
+			        </div>
+	           </form>
 	       </div>
-	        <div class="col-12 col-sm-8 mt-3" id="info_div">
-	            <h5 style="color:black;"><strong>ECI</strong></h5>
-	            <p>The Election Commission of India is an autonomous constitutional authority responsible for administering election 
-	            processes in India. The body administers elections to the Lok Sabha, Rajya Sabha, state Legislative Assemblies in India,
-	             and the offices of the President and Vice President in the country</p>
-	             <br/>
-	             <h6><strong>How does the online voting works?</strong></h6>
-	             <p>The user like in general will register and form an account and at the time of voting , the register user will login 
-	             into his account and will vote. The process of blockchain lies in the backend. Each vote with all the relevant details
-	             of user who voted will form a block and as no. of users vote , these blocks will form a blockchain. It uses hyperledger
-	            (a private blockchain) to form a blockchain of votes so as to keep voting in a private network only. Each vote is like
-	            a transaction in a public blockchain network. It also makes use of machine learning to validate a vote. To validate 
-	            each vote, face detection by ML algorithms will be used to add more security to the system.</p>
-	            <h6><strong>Is it secure?</strong></h6>
-	            <p>Yes it is absolutely secured and transparent.It makes use of machine learning to validate a vote. To validate 
-	            each vote, face detection by ML algorithms will be used to add more security to the system.</p>
-	        </div>
-	         <div class="col-12 col-sm-2 mt-3">
-	            <a href="#" >Help?</a><br/>
+	       <div class="col-12 col-sm-2">
+	          <a href="#" >Help?</a><br/>
 	            <a href="#" >Contact Us</a><br/>
 	            <a href="#" >Send Feedback</a>
-	         </div>
-	   </div>		  
-   </div>
-    <footer class="footer">
+	       </div>
+	  </div>
+</div>
+<footer class="footer">
         <div class="container">
            <div class="row justify-content-center">             
                 <div class="col-auto">
@@ -118,7 +125,8 @@
            </div>
         </div>
     </footer>
-    <script src="jquery/dist/jquery.slim.min.js"></script>
+
+<script src="jquery/dist/jquery.slim.min.js"></script>
      <script src="js/popper.js/dist/umd/popper.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
 </body>

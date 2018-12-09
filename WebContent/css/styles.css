@@ -113,7 +113,7 @@ h6
 	height:100px;
 	border : 1px solid black;
 }
-#personal_div, #info_div
+#personal_div, #info_div, #register_div
 {
 	border-right: 1px solid black;
 }
