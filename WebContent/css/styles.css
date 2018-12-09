@@ -86,8 +86,7 @@ body {
 	color: floralwhite;
 	height: 60px;
 	padding-top: 12px;
-	padding-left: 50px;
-	
+	padding-left: 50px;	
 }
 h6
 {
@@ -108,4 +107,13 @@ h6
 	padding-top:5px;
 	padding-bottom:5px;
 }
- 
+.sqr
+{
+	width:130px;
+	height:100px;
+	border : 1px solid black;
+}
+#personal_div, #info_div
+{
+	border-right: 1px solid black;
+}

@@ -13,9 +13,12 @@
   
 <%  
 boolean status=LoginDao.validate(obj);  
+String uname = obj.getUname();
 if(status)
 {    
    session.setAttribute("session","TRUE"); 
+   session.setAttribute("username", uname);
+   session.setAttribute("username", uname);
    response.sendRedirect("home.jsp");
 }  
 else  
