@@ -37,12 +37,17 @@
                <h5 style="color:black;">Welcome ${username}</h5>
           </div>
           <div class="col-12 col-sm-1 offset-sm-1 mt-3">
-              <a href="#" style="text-decoration-style:none;"><img alt="EC" src="static/logout.png" class="img-fluid mr-auto" height="50" width="61"></a>
+              <a href="logout.jsp" style="text-decoration-style:none;"><img alt="EC" src="static/logout.png" class="img-fluid mr-auto" height="50" width="61"></a>
               <br/>
-              <a href="#" style="text-decoration-style:none;"><h5 style="color:black;">Logout</h5></a>
+              <a href="logout.jsp" style="text-decoration-style:none;"><h5 style="color:black;">Logout</h5></a>
           </div>
           
        </div>
+       <div class="row">
+        <div class="col-12 col-sm-9">
+            <h6 style="color:black; font-size:12px;"><i>Election Commission of India  .  Online Voting Portal  .  Government  of India</i></h6>
+        </div>
+      </div> 
    </div>
    <div class="container bg-light mt-2">
        <div class="row">
@@ -57,7 +62,7 @@
                      data-placement="bottom" style="color:floralwhite;" >Register</a>
           </div>
           <div class="col-12 col-sm-2">
-             <a role="button" class="btn btn-block nav-link bg-primary" href="#reserveform" data-toggle="tooltip" data-html="true"
+             <a role="button" class="btn btn-block nav-link bg-primary" href="checkStatus.jsp" data-toggle="tooltip" data-html="true"
                      data-placement="bottom" style="color:floralwhite;">Check Status</a>
           </div>
           <div class="col-12 col-sm-2">
@@ -65,7 +70,7 @@
                      data-placement="bottom" style="color:floralwhite;">Upload Documents</a>
           </div>
           <div class="col-12 col-sm-2">
-             <a role="button" class="btn btn-block nav-link bg-primary" href="#reserveform" data-toggle="tooltip" data-html="true"
+             <a role="button" class="btn btn-block nav-link bg-primary" href="addfaceId.jsp" data-toggle="tooltip" data-html="true"
                      data-placement="bottom" style="color:floralwhite;">Add Face ID</a>
           </div>
           <div class="col-12 col-sm-2">
@@ -73,7 +78,7 @@
                      data-placement="bottom" style="color:floralwhite;">Election 2019</a>
           </div>
           <div class="col-12 col-sm-2">
-             <a role="button" class="btn btn-block nav-link bg-primary" href="#reserveform" data-toggle="tooltip" data-html="true"
+             <a role="button" class="btn btn-block nav-link bg-primary" href="settings.jsp" data-toggle="tooltip" data-html="true"
                      data-placement="bottom" style="color:floralwhite;">Settings</a>
           </div>
 	   </div>
@@ -94,13 +99,13 @@
 			         <div class="form-group">
 			             <label class="control-label col-sm-3" for="m_name">Middle Name:</label>
 			             <div class="col-sm-10">
-			                  <input type="text" class="form-control" id="m_name" name="m_name" placeholder="Enter middle name">
+			                  <input type="text" class="form-control" id="m_name" name="mname" placeholder="Enter middle name">
 			             </div>
 			        </div>
 			        <div class="form-group">
 			             <label class="control-label col-sm-3" for="l_name">Last Name:</label>
 			             <div class="col-sm-10">
-			                  <input type="text" class="form-control" id="l_name" name="l_name" placeholder="Enter last name">
+			                  <input type="text" class="form-control" id="l_name" name="lname" placeholder="Enter last name">
 			             </div>
 			        </div>
 			        <div class="form-group">
@@ -152,13 +157,13 @@
 			        <div class="form-group">
 			             <label class="control-label col-sm-3" for="pincode">Pincode:</label>
 			             <div class="col-sm-10">
-			                  <input type="number" class="form-control" id="pincode" name="pincode" placeholder="Enter pincode">
+			                  <input type="text" class="form-control" id="pincode" name="pincode" placeholder="Enter pincode">
 			             </div>
 			        </div>
 			        <div class="form-group">
 			             <label class="control-label col-sm-3" for="voter_id">Voter Id:</label>
 			             <div class="col-sm-10">
-			                  <input type="text" class="form-control" id="pincode" name="voter_id" placeholder="Enter voter-id">
+			                  <input type="text" class="form-control" id="voter_id" name="voter_id" placeholder="Enter voter-id">
 			             </div>
 			        </div>
 			        
@@ -167,14 +172,7 @@
 			             <div class="col-sm-10">
 			                  <input type="text" class="form-control" id="phone_no" name="phone_no" placeholder="Enter phone no.">
 			             </div>
-			        </div>
-			        <div class="form-group">
-			             <label class="control-label col-sm-3" for="phone_no">Create a username:</label>
-			             <div class="col-sm-10">
-			                  <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Enter user name">
-			             </div>
-			        </div>
-			        
+			        </div>			        
 			        <div class="form-group">
 			           <div class="col-sm-offset-2 col-sm-10">
 			             <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>

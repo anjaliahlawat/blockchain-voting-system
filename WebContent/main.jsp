@@ -66,7 +66,7 @@
                                     <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
                                     <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
                                 </div>
-                            </form>  
+                        </form>  
                 </div>
             </div>
         </div>
@@ -142,23 +142,41 @@
         </div>
         <div class="container mt-5">
             <div class="row row-header">
-                <div class="col-12 col-sm-4 offset-sm-3 align-self-center" id="heading">
+                <div class="col-12 col-sm-4 align-self-center" id="heading">
                    <h5>Latest News</h5>
                 </div>
-                
+                <div class="col-12 col-sm-4 offset-sm-2 align-self-center" id="heading">
+                   <h5>Important Notice</h5>
+                </div>
             </div>
             <div class="row">
-                <div class="col-12 col-sm-6 offset-sm-3 align-self-center" id="news1">
-                   <a href="#">The Candidate List of election 2019</a>
+                <div class="col-12 col-sm-6 align-self-center" >
+                   <div class="col-12 col-sm-9" id="news1">
+                      <a href="#">The Candidate List of election 2019</a><br/>
+                   </div>
+                   <div class="col-12 col-sm-9" id="news2">
+                      <a href="#">List of all Parties in Lok Sabha elections</a><br/>                  
+                   </div>
+                   <div class="col-12 col-sm-9" id="news3">
+                      <a href="#">ECI Cyber Bulletin</a><br/>
+                   </div>
+                   <div class="col-12 col-sm-9" id="news4">
+                      <a href="#">Polls held by IBTC channel</a>
+                   </div>
                 </div>
-                <div class="col-12 col-sm-6 offset-sm-3 mt-1 align-self-center" id="news2">
-                   <a href="#">List of all Parties in Lok Sabha elections</a>
-                </div>
-                <div class="col-12 col-sm-6 offset-sm-3 mt-1 align-self-center" id="news3">
-                   <a href="#">ECI Cyber Bulletin</a>
-                </div>
-                <div class="col-12 col-sm-6 offset-sm-3 mt-1 align-self-center" id="news4">
-                   <a href="#">Polls held by IBTC channel</a>
+                <div class="col-12 col-sm-5 align-self-center" >
+                   <div class="col-12 col-sm-9" id="news1">
+                      <a href="#">Online Voting via registration </a><br/>
+                   </div>
+                   <div class="col-12 col-sm-9" id="news2">
+                      <a href="#">Check Candidate from your district here</a><br/>                  
+                   </div>
+                   <div class="col-12 col-sm-9" id="news3">
+                      <a href="#">Vote India Scheme</a><br/>
+                   </div>
+                   <div class="col-12 col-sm-9" id="news4">
+                      <a href="#">Apply for Voter Card</a>
+                   </div> 
                 </div>
             </div>
             
